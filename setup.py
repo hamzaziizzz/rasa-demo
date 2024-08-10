@@ -4,15 +4,15 @@ import os
 
 
 install_requires = [
-    "mailchimp3~=3.0.2",
-    "oauth2client~=4.1.2",
-    "gspread~=3.0.0",
-    "beautifulsoup4~=4.6.3",
-    "requests~=2.24.0",
-    "geopy~=1.18.1",
-    "pandas>=0.25.0",
-    "algoliasearch>=2.0,<3.0",
-    "spacy~=2.2.4",
+    "mailchimp3",
+    "oauth2client",
+    "gspread",
+    "beautifulsoup4",
+    "requests",
+    "geopy",
+    "pandas",
+    "algoliasearch",
+    "spacy",
 ]
 
 here = os.path.abspath(os.path.dirname(__file__))
@@ -28,8 +28,7 @@ setup(
         "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
         # supported python versions
         "Programming Language :: Python",
-        "Programming Language :: Python :: 3.6",
-        "Programming Language :: Python :: 3.7",
+        "Programming Language :: Python :: 3.10.12",
     ],
     packages=find_packages(where="demo"),
     version="2.0",
