@@ -4,7 +4,7 @@ import logging
 import gspread
 import tempfile
 from oauth2client.service_account import ServiceAccountCredentials
-from gspread.models import Spreadsheet
+from gspread import Spreadsheet
 from typing import List, Text, Optional
 
 from actions import config
@@ -13,7 +13,7 @@ logger = logging.getLogger(__name__)
 
 
 class GDriveService:
-    """Service to write to a spreadsheet in google drive."""
+    """Service to write to a spreadsheet in Google Drive."""
 
     # Name of the sales inbounds spreadsheet
     SALES_SPREADSHEET_NAME = "Qualify Inbounds"
